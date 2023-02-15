@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <title>SFC Frenchcore - Diós Briós</title>
+    <style>
+      body {
+        background-image: url("https://m.kaloriabazis.hu/p/1/4/9/1003149_brios_big.jpg");
+        background-size: cover;
+        color: black;
+      }
+      form {
+        background-color: black;
+        color: green;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        opacity: 0.9;
+      }
+      input[type="text"], input[type="password"] {
+        padding: 10px;
+        margin: 10px 0;
+        width: 250px;
+        border-radius: 5px;
+        border: none;
+        background-color: green;
+        color: black;
+      }
+      input[type="checkbox"] {
+        margin: 10px 0;
+      }
+      input[type="button"] {
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: green;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function checkLogin() {
+        var password = document.getElementById("password").value;
+        var checkbox = document.getElementById("checkbox").checked;
+        if (!checkbox) {
+          alert("Pipáld be a feltételt!");
+          return;
+        }
+        if (password === "SFC") {
+		  window.location.href = "https://soundcloud.com/oksa_roland/sfc-frenchcore-dios-brios?si=132d43cc83c84abd98079be7b336a0ee&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
+        } else {
+          alert("Rossz jelszó, próbáld újra");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>SFC Frenchcore - Diós Briós</h1>
+    <form>
+      <label for="password">Jelszó:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="checkbox" id="checkbox" name="checkbox"> <label for="checkbox">Elfogadom, hogy a zene után a fülem lehetségesen fájni fog!</label><br><br>
+      <input type="button" value="Bejelentkezés" onclick="checkLogin()">
+    </form>
+  </body>
+</html>
+<<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  p {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <p id="demo"></p>
+  
+  <script>
+
+  var countDownDate = new Date("Jul 26, 2023 8:00:00").getTime();
+  
+
+  var x = setInterval(function() {
+  
+
+    var now = new Date().getTime();
+      
+  
+    var distance = countDownDate - now;
+      
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+   
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+ 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
+  
+  </body>
+  </html>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Tábor weblap linkje</title>
+      <style>
+        .button {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          background-color: white;
+          color: red;
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+        }
+      </style>
+    </head>
+    <body>
+      <a href="https://instrumentweb.hu/20140425_gyere_tanulj_zenelj_es_legyel_a_magyar_zene_resze">
+        <button class="button">Tábor</button>
+      </a>
+    </body>
+  </html>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>GIF loopolva</title>
+      <style>
+        #gif-container {
+          position: fixed;
+          bottom: 0;
+          right: 0;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="gif-container">
+        <img src="https://media.tenor.com/gjbq2A5lzDcAAAAd/fortnite-fortnite-dance.gif" alt="Animated GIF" width="300" height="300" loop="true">
+      </div>
+    </body>
+  </html>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Animált GIF</title>
+    <style>
+      #gif {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="gif" src="https://media.tenor.com/2BqdgnGhbEgAAAAM/brr-skidibi.gif" alt="Animált GIF">
+  </body>
+</html>
